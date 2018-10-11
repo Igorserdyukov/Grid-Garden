@@ -14,7 +14,7 @@
   #soil,
   #overlay {
 	display: grid;
-	grid-template-columns: 50% 0 0 0;
+	grid-template-columns:  repeat(8, 12.5%);
 	grid-template-rows: 20% 20% 20% 20% 20%;
 	position: absolute;
 	top: 0;
@@ -82,7 +82,8 @@
   }
 
   .treatment.carrot {
-
+	grid-column: 1;
+	grid-row: 1;
   }
 
   .plant.carrot .bg {
