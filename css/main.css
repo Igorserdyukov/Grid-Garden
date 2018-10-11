@@ -25,6 +25,7 @@
   
   #plants {
 	z-index: 30;
+	order: -1;
   }
   
   #soil {
@@ -75,8 +76,8 @@
   
   .plant.weed {
   }
-  .treatment.weed {
-	order: 6;
+  .treatment.weed {	
+	order: -1;
   }
 
   .plant.carrot {	
