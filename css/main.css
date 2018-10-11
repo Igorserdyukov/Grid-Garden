@@ -14,7 +14,7 @@
   #soil,
   #overlay {
 	display: grid;
-	grid-template-columns: 50px 1fr 1fr 1fr 50px;
+	grid-template-columns: 75px 3fr 2fr;
 	grid-template-rows: 20% 20% 20% 20% 20%;
 	position: absolute;
 	top: 0;
@@ -25,7 +25,7 @@
   
   #plants {
 	z-index: 30;
-	grid-template-columns: 50px 1fr 1fr 1fr 50px;
+	grid-template-columns: 75px 3fr 2fr;
   }
   
   #soil {
@@ -50,6 +50,7 @@
   
   #garden {
 	z-index: 20;
+	grid-template-columns: 75px 3fr 2fr;
   }
   
   
@@ -75,18 +76,14 @@
   }
   
   .plant.weed {
-	grid-area: 1 / 5 / 6 / 6;
   }
   .treatment.weed {	
-	grid-area: 1 / 5 / 6 / 6;
   }
 
   .plant.carrot {	
-	grid-area: 1 / 1 / 6 / 2;
   }
 
   .treatment.carrot {
-	grid-area: 1 / 1 / 6 / 2;
   }
 
   .plant.carrot .bg {
