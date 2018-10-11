@@ -2,53 +2,103 @@
 	position: relative;
 	width: 50vw;
 	height: 50vw;
+	min-width: 300px;
+	min-height: 300px;
 	overflow: hidden;
-	display: flex;
-}
-
-#background {
-	z-index: 10;
-	background-color: #1F5768;
-}
-
-#pond {
-	z-index: 20;
-}
-
-#background, #pond {
-	display: flex;
+	border: 12px solid #6D5720;
+	border-radius: 12px;
+  }
+  
+  #garden,
+  #plants,
+  #soil,
+  #overlay {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 20% 20% 20% 20% 20%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-.lilypad .bg, .frog .bg {
+  }
+  
+  #plants {
+	z-index: 30;
+  }
+  
+  #soil {
+	background-color: #523D1F;
+	overflow: hidden;
+  }
+  
+  .plot {
 	width: 100%;
 	height: 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 60% 60%; 
-}
-
-#background {	
-	flex-wrap: wrap-reverse;
-	flex-direction: column-reverse;
-	align-content: space-between;
-	justify-content: center;
-}
-
-#pond {	
-	flex-wrap: wrap-reverse;
-	flex-direction: column-reverse;
-	align-content: space-between;
-	justify-content: center;
-}
-
-.frog, .lilypad {
+	background-color: #6F532A;
+	background-color: #836B32;
+	background-image: url('../img/dirt.svg');
+	background-size: calc(10vw - 4px);
+  }
+  
+  #overlay .plot {
+	z-index: 50;
+	background: none;
+	box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+  }
+  
+  #garden {
+	z-index: 20;
+  }
+  
+  
+  .plant,
+  .treatment {
 	position: relative;
-	width: 20%;
-	height: 20%;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
-}
+  }
+  
+  .plant .bg,
+  .treatment .bg {
+	width: 100%;
+	height: 100%;
+	background-position: left top;
+	background-size: calc(10vw - 4px);
+  }
+  
+  .treatment .bg {
+	border: 5px solid rgba(255, 255, 255, 0.4);
+	border-width: 3px 5px 5px 3px;
+  }
+  
+  .treatment.carrot {
+	grid-column-start:3;
+  }
+  
+  .plant.carrot .bg {
+	background-image: url("../img/carrots.svg");
+  }
+  
+  .plant.weed .bg {
+	background-image: url("../images/weeds.svg");
+  }
+  
+  .plant.carrot.correct .bg {
+	background-image: url("../images/carrots-correct.svg");
+  }
+  
+  .plant.weed.correct .bg {
+	background-image: url("../images/weeds-correct.svg");
+  }
+  
+  .treatment.carrot .bg {
+	background-color: rgba(81, 140, 179, 1);
+	background-image: url("../images/water.svg");
+  }
+  
+  .treatment.weed .bg {
+	background-color: #63393E;
+	background-image: url("../images/poison.svg");
+  }
