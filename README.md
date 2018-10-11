@@ -1,1 +1,2 @@
+Hello!
 # Grid-Garden
