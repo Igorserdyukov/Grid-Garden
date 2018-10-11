@@ -73,11 +73,18 @@
 	border-width: 3px 5px 5px 3px;
   }
   
+  .plant.weed {
+	grid-column: 2;
+	grid-row: 5;
+  }
   .treatment.weed {
-	
+	grid-column: 2;
+	grid-row: 5;
   }
 
   .plant.carrot {
+	grid-column: 2;
+	grid-row: 5;
   }
   .treatment.carrot {
 	grid-row: 3/6;	
