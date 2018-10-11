@@ -74,15 +74,14 @@
   }
   
   .treatment.weed {
-	grid-column-start:1;
-	grid-column-start:-3;
+	
   }
 
   .plant.carrot {
-
+	grid-column-end:4;
   }
   .treatment.carrot {
-	
+	grid-column-end: span 2;
   }
 
   .plant.carrot .bg {
