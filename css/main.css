@@ -78,10 +78,10 @@
   }
 
   .plant.carrot {
-	grid-column-end:4;
+	grid-column-end:6;
   }
   .treatment.carrot {
-	grid-column-end: span 2;
+	grid-column-end: 6;
   }
 
   .plant.carrot .bg {
