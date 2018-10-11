@@ -14,7 +14,7 @@
   #soil,
   #overlay {
 	display: grid;
-	grid-template: 60% 40% /200px;
+	grid-template-columns: 20% 20% 20% 20% 20%;
 	grid-template-rows: 20% 20% 20% 20% 20%;
 	position: absolute;
 	top: 0;
@@ -25,7 +25,7 @@
   
   #plants {
 	z-index: 30;
-	grid-template: 60% 40% /200px;
+	grid-template: 1fr 50px /20% 1fr;
   }
   
   #soil {
@@ -50,7 +50,7 @@
   
   #garden {
 	z-index: 20; 
-	grid-template: 60% 40% /200px;
+	grid-template: 1fr 50px /20% 1fr;
   }
   
   
