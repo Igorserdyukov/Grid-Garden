@@ -74,7 +74,14 @@
   }
   
   .treatment.weed {
-	grid-column-start:5;
+	grid-column-start:;
+  }
+  .plant.carrot {
+	grid-column-start: 1;
+  }
+  .treatment.carrot {
+	grid-column-start: 1;
+	grid-column-end:4;
   }
 
   .plant.carrot .bg {
@@ -95,7 +102,7 @@
   
   .treatment.carrot .bg {
 	background-color: rgba(81, 140, 179, 1);
-	background-image: url("../images/water.svg");
+	background-image: url("../img/water.svg");
   }
   
   .treatment.weed .bg {
