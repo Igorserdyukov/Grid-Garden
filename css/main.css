@@ -80,7 +80,7 @@
   .plant.carrot {
   }
   .treatment.carrot {
-	grid-row-start: 3;
+	grid-row: 3/6;	
   }
 
   .plant.carrot .bg {
