@@ -73,16 +73,16 @@
 	border-width: 3px 5px 5px 3px;
   }
   
-  .treatment.carrot {
-	grid-column-start:3;
+  .treatment.weed {
+	grid-column-start:5;
   }
-  
+
   .plant.carrot .bg {
 	background-image: url("../img/carrots.svg");
   }
   
   .plant.weed .bg {
-	background-image: url("../images/weeds.svg");
+	background-image: url("../img/weeds.svg");
   }
   
   .plant.carrot.correct .bg {
@@ -100,5 +100,5 @@
   
   .treatment.weed .bg {
 	background-color: #63393E;
-	background-image: url("../images/poison.svg");
+	background-image: url("../img/poison.svg");
   }
