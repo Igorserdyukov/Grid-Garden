@@ -79,12 +79,10 @@
   }
 
   .plant.carrot {
-	grid-column: 2/6;
-	grid-row: 1/6;
+	grid-area: 1/2/4/6;
   }
   .treatment.carrot {
-	grid-column: 2/6;
-	grid-row: 1/6;	
+	grid-area: 1/2/4/6;	
   }
 
   .plant.carrot .bg {
