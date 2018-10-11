@@ -77,11 +77,11 @@
 	grid-column-start:;
   }
   .plant.carrot {
-	grid-column-start: 1;
+	grid-column-start: 2;
   }
   .treatment.carrot {
-	grid-column-start: 1;
-	grid-column-end:4;
+	grid-column-start: 5;
+	grid-column-end:-5;
   }
 
   .plant.carrot .bg {
