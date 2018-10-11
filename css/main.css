@@ -76,14 +76,14 @@
   .plant.weed {
   }
   .treatment.weed {
+	order: 6;
   }
 
   .plant.carrot {	
-	grid-area: 1 / 4 / 6 / 5;
   }
 
-  .treatment.carrot {	
-	grid-area: 2/3/5/6;
+  .treatment.carrot {
+
   }
 
   .plant.carrot .bg {
