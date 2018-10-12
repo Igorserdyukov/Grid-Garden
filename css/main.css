@@ -95,14 +95,6 @@
 	background-image: url("../img/weeds.svg");
   }
   
-  .plant.carrot.correct .bg {
-	background-image: url("../images/carrots-correct.svg");
-  }
-  
-  .plant.weed.correct .bg {
-	background-image: url("../images/weeds-correct.svg");
-  }
-  
   .treatment.carrot .bg {
 	background-color: rgba(81, 140, 179, 1);
 	background-image: url("../img/water.svg");
